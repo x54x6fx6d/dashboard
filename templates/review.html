@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/review.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Devora Review</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-primary" href="/">Devora</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="/dashboard">Dashboard</a>
+              <a class="nav-link" href="/api">API Docs</a>
+              <a class="nav-link active" aria-current="page" href="#">Review</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="wrapper">
+        <div class="container-fluid bg-dark box">
+            <input type="text" class="bg-secondary border-1 border-light rounded-3 text-light" id="name" placeholder="Name">
+            <input type="email" class="bg-secondary border-1 border-light rounded-3 text-light" id="email" placeholder="your@email.com">
+            <input type="text" class="bg-secondary border-1 border-light rounded-3 text-light" id="content" placeholder="Your review">
+            <button type="button" class="btn btn-secondary" id="submitBtn" onclick="sendReview()">Send Review</button>
+        </div>
+      </div>
+    <script src="{{ url_for('static', filename='scripts/review.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+    background-color: #2f2f2f;
+}
+
+.requestBox {
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    width: 90%;
+    height: 45px;
+    border: 0px solid;
+    border-radius: 10px;
+    border-spacing: 0px;
+    text-align:left;
+}
+
+
+.filter {
+    display: flex;
+    float: left;
+    height: 100%;
+    width: 10px;
+    position: relative;
+    left: -12px;
+    border: 0px solid;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.random {
+    background-color: aqua;
+}
+
+.critical {
+    background-color: red;
+}
+
+.requestType {
+    position: relative;
+    top: 8px;
+    left: 10px;
+    line-height: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    float: left;
+    width: max-content;
+}
+
+.requestBox h3 {
+    margin: 3px;
+    position: relative;
+    left: 30px;
+}
+
+#box1 {
+    position: absolute;
+    top: 100px;
+}
+
+#box2 {
+    position: absolute;
+    top: 155px;
+}
+
+#box3 {
+    position: absolute;
+    top: 210px;
+}
+
+@media (max-width: 480px){
+    .navbar {
+        z-index: 1;
+        box-shadow: 1px 2px 20px white;
+    }
+    .multiline .requestType {
+        padding: 10px;
+    }
+    .multiline {
+        height: 65px;
+    }
+    #box3 {
+        top: 255px;
+    }
+
+}
+@media (max-width: 375px) {
+    .requestBox {
+        width: 90%;
+        left: 5%;
+    }
+
+    .smallMulti {
+        height: 65px;
+    }
+
+    .smallMulti .requestType {
+        padding: 10px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar {
+        z-index: 2;
+        box-shadow: 1px 2px 20px white;
+    }
+
+    .requestBox {
+        width: 80%;
+        left: 10%;
+    }
+
+    .smallMulti {
+        height: 65px;
+    }
+
+    .smallMulti .requestType {
+        padding: 10px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 991px){
+    .navbar {
+        z-index: 1;
+        box-shadow: 1px 2px 20px white;
+    }
+}

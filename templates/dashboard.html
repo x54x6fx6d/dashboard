@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Devora Dashboard</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-primary" href="/">Devora</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+              <a class="nav-link" href="/api/">API Docs</a>
+              <a class="nav-link" href="/review">Review</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid bg-dark box text-light cpu">
+        <h4>CPU</h4>
+        <div class="progress">
+          <div class="progress-bar" id="cpuBar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="container-fluid bg-dark box text-light ram">
+        <h4>Memory</h4>
+        <div class="progress">
+          <div class="progress-bar" id="ramBar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="container-fluid bg-dark box text-light disk">
+        <h4>Storage</h4>
+        <div class="progress">
+          <div class="progress-bar" id="diskBar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="container-fluid bg-dark box text-light network">
+        <h4>Network</h4>
+        <div class="progress">
+          <div class="progress-bar" id="networkBar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <script src="{{ url_for('static',filename='scripts/reloader.js') }}"></script>
+</body>
+</html>

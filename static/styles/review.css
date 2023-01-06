@@ -1,0 +1,68 @@
+body {
+    background-color: #2f2f2f;
+}
+
+.wrapper {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 25%;
+    height: 50%;
+    padding: 10px;
+}
+
+input {
+    display: block;
+    margin: auto;
+}
+
+#name {
+    position: relative;
+    top: 10%;
+}
+
+#email {
+    position: relative;
+    top: 20%;
+}
+
+#content {
+    position: relative;
+    top: 30%;
+    
+}
+
+#submitBtn {
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 50%;
+
+}
+
+@media (max-width: 480px){
+    .navbar {
+        z-index: 1;
+        box-shadow: 1px 2px 20px white;
+    }
+
+    .box {
+        width: 90%;
+        height: 30%;
+    }
+}
+
+@media (max-width: 991px){
+    .navbar {
+        z-index: 1;
+        box-shadow: 1px 2px 20px white;
+    }
+
+    .box {
+        height: 40%;
+    }
+}
